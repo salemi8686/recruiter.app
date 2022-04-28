@@ -1,0 +1,78 @@
+.her {
+    position: relative;
+    left: 8%;
+    top: 5%;
+    font-weight: 10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: unset;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.div1 {
+    position: absolute;
+    left: 8.5%;
+    width: 270px;
+    display: table;
+    padding: 12px;
+    border: 1px solid rgb(222, 221, 221);
+    box-shadow: 5px 5px 5px 5px rgb(126, 115, 115);
+}
+
+#div2 {
+    position: absolute;
+    display: table;
+    left: 30%;
+    width: 60%;
+    height: 350px;
+    border: 1px solid rgb(222, 221, 221);
+    box-shadow: 4px 4px 4px 4px rgb(222, 220, 221);
+    ;
+}
+
+.up_a {
+    cursor: pointer;
+}
+
+.del_a {
+    cursor: pointer;
+}
+
+.up_a:hover {
+    background-color: black;
+}
+
+.del_a:hover {
+    background-color: red;
+}
+
+span {
+    color: rgb(139, 137, 137);
+}
+
+.sub {
+    position: relative;
+    font-size: 25px;
+    left: 2%;
+    font-weight: bold;
+}
+
+.sub_d1 {
+    position: absolute;
+    left: 5%;
+    display: table;
+}
+
+.div_for {
+    display: table;
+}
+
+li {
+    font-size: 16px;
+}
+
+.sub_n {
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

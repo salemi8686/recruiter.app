@@ -1,0 +1,28 @@
+<h1>My Interviews</h1>
+<div *ngIf="interviews.length" class="div1">
+    <div class="div3">
+        <p class="p1">#</p>
+        <p class="p2">Candidate</p>
+        <p class="p5">Grade</p>
+        <p class="p4">Email</p>
+        <p class="p3">Subjects</p>
+    </div>
+    <hr class="hr_m"><br>
+    <div *ngFor="let interview of interviews" class="div4">
+        <p class="i1">{{interview.id}}</p>
+        <p class="i2">{{interview.candidate_name}}</p>
+        <p *ngIf="interview.level==='junior'" class="i5j">{{interview.level}}</p>
+        <p *ngIf="interview.level==='middle'" class="i5m">{{interview.level}}</p>
+        <p *ngIf="interview.level==='senior'" class="i5s">{{interview.level}}</p>
+        <p class="i4">{{interview.email}}</p>
+        <p class="i3">{{interview.sub_size}}</p><br>
+        <a routerLink="/interviews/my/{{interview.id}}" class="open_but">Open</a>
+    </div>
+</div>
+
+<div class="bott">
+    <p style=" position: absolute; left:9%; color: white; font-size: 20px; padding-bottom:10px; margin-top:10px; ">Tech.Interview</p><br>
+    <p style=" position: absolute; left:9%; color: white; font-size: 15px;"> Kazakhstan,Almaty</p><br>
+    <p style=" position: absolute; left:9%; color: white; font-size: 16px;"> Email: asikg0799@gmail.com </p><br>
+    <p style=" position: absolute; left:9%; color: white; font-size: 16px;"> Phone: +77020149401</p>
+</div>

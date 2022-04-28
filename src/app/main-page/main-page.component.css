@@ -10,7 +10,6 @@
     left: 100px;
     padding: 20px;
     color: black;
-    background-color: white;
 }
 
 .but_sign {
@@ -24,28 +23,26 @@
     border-color: dodgerblue;
 }
 
-.m_in0 {
-    font-size: 20px;
+.h_page {
     position: absolute;
-    text-align: right;
-    right: 660px;
+    top: 30%;
+    left: 11%;
 }
 
-.m_in {
-    font-size: 20px;
-    position: absolute;
-    text-align: right;
-    right: 500px;
+.t_in1 {
+    font-size: 65px;
+    font-weight: bolder;
 }
 
-.m_in1 {
-    font-size: 20px;
-    position: absolute;
-    text-align: right;
-    right: 300px;
+.notes {
+    font-size: 37px;
+    width: 600px;
 }
 
-a:link {
-    text-decoration: none;
-    color: rgb(118, 118, 118);
+.large_img {
+    text-align: right;
+}
+
+.h1 {
+    top: 40%
 }

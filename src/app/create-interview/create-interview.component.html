@@ -1,0 +1,28 @@
+<p class="her">Create an Interview</p>
+<form class="fm">
+    <input type="text" placeholder="Candidate name" class="txt" [(ngModel)]="candidate_name" [ngModelOptions]="{standalone: true}"><br>
+    <br>
+    <select name="positions" id="pos">
+      <option value="selecting">Select a grade</option>
+      <option value="junior">Junior</option>
+      <option value="middle">Middle</option>
+      <option value="senior">Senior</option>
+    </select>
+    <a class="back"> ← Back</a>
+    <a class="save" (click)="save()">Save</a>
+
+</form>
+
+<div id="fm1">
+    <p class="sb_sz"><span>Subjects</span> {{queues[num_sub]}}</p>
+    <button class="add_a" (click)="addInput()"><span class="img_b">+</span> Add subject</button>
+    <div id="fm2">
+        <span class="qu1">1</span><select name="template_titles" id="tit" [(ngModel)]="sel_option"><option *ngFor="let title of template_titles">{{title}}</option><br></select><button class="add" (click)="addTemp()">Add</button><br>
+        <div *ngIf="add_clicked===1" class="fm3">
+            <div *ngFor="let subject of template.subjects; index as i">
+                <span class="qu1">{{i+1}}</span><span class="naming">{{subject.name}}</span> <select name="grd_tit" id="as_grade" [(ngModel)]="gr_option"><option *ngFor="let grade of grades">{{grade}}</option></select>
+            </div>
+        </div>
+    </div>
+
+</div>

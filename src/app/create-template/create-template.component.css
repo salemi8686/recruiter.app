@@ -1,0 +1,239 @@
+.her {
+    position: relative;
+    left: 7%;
+    top: 3%;
+    font-weight: 10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: unset;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.fm {
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    left: 6%;
+    top: 27%;
+    margin: 30px;
+    padding: 20px;
+    border: 1px rgb(207, 206, 206) solid;
+    border-radius: 4px;
+}
+
+.txt {
+    padding: 20px;
+    width: 310px;
+    border-radius: 3px;
+    border: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 0 10px #32956f;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.txt:focus {
+    outline: none !important;
+    border: 1px solid red;
+    box-shadow: none;
+}
+
+.back {
+    position: relative;
+    top: 40%;
+    font-size: 17px;
+    margin-top: 20px;
+    padding: 7px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.back:hover {
+    color: white;
+    background-color: black;
+}
+
+.save {
+    position: relative;
+    top: 40%;
+    left: 62%;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 7px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 1.5px solid rgb(57, 107, 233);
+    background-color: rgb(57, 107, 233);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save:hover {
+    background-color: rgb(44, 93, 216);
+    border-color: rgb(44, 93, 216);
+}
+
+.bott {
+    position: fixed;
+    height: 100px;
+    width: 2000px;
+    background-color: rgb(7, 30, 52);
+    bottom: 0%;
+}
+
+#fm1 {
+    position: absolute;
+    top: 31.5%;
+    left: 36%;
+    border: 1px solid rgb(197, 197, 197);
+    height: auto;
+    width: 900px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.add_a {
+    position: absolute;
+    padding: 7px;
+    border: 2px solid rgb(19, 115, 240);
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    right: 20px;
+    top: 55px;
+}
+
+.add_b {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.inp {
+    position: absolute;
+    margin: 30px;
+    padding: 30px;
+    width: 400px;
+}
+
+.img_b {
+    font-size: 15px;
+    padding: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 1px solid rgb(19, 115, 240);
+    border-radius: 2px;
+}
+
+.add_a:hover {
+    color: white;
+    background-color: rgb(19, 115, 240);
+}
+
+.sb_sz {
+    position: relative;
+    color: black;
+    font-size: 30px;
+    left: 30px;
+    bottom: 5%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#fm2 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
+    display: table;
+    height: auto;
+}
+
+.qu1 {
+    padding: 9px;
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border: 1px solid rgb(176, 172, 172);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: rgb(229, 228, 228);
+    font-size: 17px;
+}
+
+.txt1 {
+    padding: 9px;
+    border: 1px solid rgb(201, 198, 198);
+    box-shadow: 0 0 3px #32956f;
+    border-radius: 2px;
+    font-size: 17px;
+    width: 600px;
+}
+
+.txt1:focus {
+    outline: none !important;
+    border: 1px solid red;
+    box-shadow: none;
+}
+
+.del_i {
+    position: absolute;
+    text-align: center;
+    height: 19px;
+    width: 19px;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-bottom: 14px;
+    padding-right: 10px;
+    border: 1px solid rgb(222, 13, 13);
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.del_i:hover {
+    color: white;
+    background-color: rgb(232, 119, 119);
+}
+
+.desc {
+    position: relative;
+    font-size: 18px;
+    left: 5%;
+}
+
+#fm3 {
+    position: relative;
+    left: 5%;
+    width: 650px;
+    height: 130px;
+    border: 1px solid rgb(201, 198, 198);
+    cursor: text;
+    display: table;
+    margin-bottom: 30px;
+}
+
+#fm3:focus {
+    border: 1px solid rgb(69, 108, 190);
+    box-shadow: 0 0 7px rgb(91, 91, 230);
+}
+
+#jun {
+    outline: none;
+    border: none;
+    position: relative;
+    left: 12%;
+    font-size: 15px;
+}
+
+#lb {
+    font-size: 17px;
+    position: absolute;
+    left: 4%;
+}

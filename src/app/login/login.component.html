@@ -1,0 +1,8 @@
+<div class="d">
+    <form class="gen">
+        <p style="text-align: center; font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Login</p>
+        <input type="text" placeholder="username or email" class="txt" [(ngModel)]="username" [ngModelOptions]="{standalone: true}"><br>
+        <input type="password" placeholder="password" class="txt" [(ngModel)]="password" [ngModelOptions]="{standalone: true}"><br>
+        <button class="login" (click)="log_b()">Login</button><br>
+    </form>
+</div>

@@ -1,0 +1,27 @@
+<p *ngIf="templates" class="her">My interview templates</p>
+<div class="add_b">
+    <a class="add_a" routerLink="/interviews/templates/my/create"><span class="img_b">+</span> Add new template</a>
+</div>
+<div *ngIf="templates.length" class="div1">
+    <div class="div3">
+        <p class="p1">#</p>
+        <p class="p2">Title</p>
+        <p class="p4">Subjects</p>
+        <p class="p3">Last update</p>
+    </div>
+    <hr class="hr_m"><br>
+    <div *ngFor="let template of templates" class="div4">
+        <p class="i1">{{template.id}}</p>
+        <p class="i2">{{template.title}}</p>
+        <p class="i4">{{template.subjects.length}}</p>
+        <p class="i3">{{dt}}</p><br>
+        <a routerLink="/interviews/templates/my/{{template.id}}" class="open_but">Open</a>
+    </div>
+</div>
+
+<div class="bott">
+    <p style=" position: absolute; left:9%; color: white; font-size: 20px; padding-bottom:10px; margin-top:10px; ">Tech.Interview</p><br>
+    <p style=" position: absolute; left:9%; color: white; font-size: 15px;"> Kazakhstan,Almaty</p><br>
+    <p style=" position: absolute; left:9%; color: white; font-size: 16px;"> Email: asikg0799@gmail.com </p><br>
+    <p style=" position: absolute; left:9%; color: white; font-size: 16px;"> Phone: +77020149401</p>
+</div>

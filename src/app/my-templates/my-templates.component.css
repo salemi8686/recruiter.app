@@ -1,0 +1,136 @@
+.her {
+    position: relative;
+    left: 8%;
+    top: 5%;
+    font-weight: 10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: unset;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.p1 {
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p2 {
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 10%;
+}
+
+.p4 {
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 37%;
+}
+
+.p3 {
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 60%;
+}
+
+.div1 {
+    margin-top: 0px;
+    position: absolute;
+    left: 10%;
+    border: 2px solid rgb(187, 187, 187);
+    width: 80%;
+    height: 80px;
+    display: table;
+}
+
+.div3 {
+    position: relative;
+}
+
+.hr_m {
+    position: relative;
+    top: 40px;
+    border: 1px solid black;
+    color: black;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.div4 {
+    position: relative;
+    height: 41px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(58, 59, 61);
+    cursor: pointer;
+}
+
+.div4:hover {
+    background-color: rgb(234, 233, 233);
+}
+
+.i1 {
+    position: absolute;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.i2 {
+    position: absolute;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 10%;
+}
+
+.i4 {
+    position: absolute;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 37%;
+}
+
+.i3 {
+    position: absolute;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    left: 60%;
+}
+
+.open_but {
+    position: absolute;
+    left: 85%;
+}
+
+.bott {
+    position: absolute;
+    height: 100px;
+    width: 2000px;
+    background-color: rgb(7, 30, 52);
+    bottom: 0%;
+}
+
+.add_b {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.add_a {
+    padding: 10px;
+    border: 2px solid rgb(19, 115, 240);
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.add_a:hover {
+    color: white;
+    background-color: rgb(19, 115, 240);
+}
+
+.img_b {
+    font-size: 22px;
+}
