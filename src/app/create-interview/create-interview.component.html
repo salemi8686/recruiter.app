@@ -2,11 +2,8 @@
 <form class="fm">
     <input type="text" placeholder="Candidate name" class="txt" [(ngModel)]="candidate_name" [ngModelOptions]="{standalone: true}"><br>
     <br>
-    <select name="positions" id="pos">
-      <option value="selecting">Select a grade</option>
-      <option value="junior">Junior</option>
-      <option value="middle">Middle</option>
-      <option value="senior">Senior</option>
+    <select name="positions" id="pos" [(ngModel)]="level">
+      <option *ngFor="let level of levels">{{level}}</option>
     </select>
     <a class="back"> ← Back</a>
     <a class="save" (click)="save()">Save</a>
@@ -17,11 +14,21 @@
     <p class="sb_sz"><span>Subjects</span> {{queues[num_sub]}}</p>
     <button class="add_a" (click)="addInput()"><span class="img_b">+</span> Add subject</button>
     <div id="fm2">
-        <span class="qu1">1</span><select name="template_titles" id="tit" [(ngModel)]="sel_option"><option *ngFor="let title of template_titles">{{title}}</option><br></select><button class="add" (click)="addTemp()">Add</button><br>
+        <span class="qu1">q</span><select name="template_titles" id="tit" [(ngModel)]="sel_option"><option *ngFor="let title of template_titles">{{title}}</option><br></select><button class="add" (click)="addTemp()">Add</button><br>
+
         <div *ngIf="add_clicked===1" class="fm3">
-            <div *ngFor="let subject of template.subjects; index as i">
-                <span class="qu1">{{i+1}}</span><span class="naming">{{subject.name}}</span> <select name="grd_tit" id="as_grade" [(ngModel)]="gr_option"><option *ngFor="let grade of grades">{{grade}}</option></select>
-            </div>
+            <div *ngFor="let subject of template.subjects; index as i" class="fm4">
+                <div class="fm5">
+                    <span class="qu2">{{i+1}}</span><span class="naming">{{subject.name}}</span> <select name="grd_tit" id="as_grade" [(ngModel)]="gr_option"><option *ngFor="let grade of grades">{{grade}}</option></select><br>
+                </div>
+                <div class="fm6">
+                    <p>Junior:{{subject.subject[0]}}</p>
+                    <p>Middle:{{subject.subject[1]}}</p>
+                    <p>Senior:{{subject.subject[2]}}</p>
+                </div>
+                <p style="margin-left: 20px; font-size: 18px;">Comment</p>
+                <textarea id="area" name="w3review" rows="7" cols="80" [(ngModel)]="comment"></textarea>
+            </div><br>
         </div>
     </div>
 

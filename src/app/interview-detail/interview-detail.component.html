@@ -9,12 +9,14 @@
             <p>{{interview.candidate_name}}</p>
         </li>
         <hr style="border-bottom:1px solid rgb(222, 221, 221);">
-        <li><span>Subjects</span><br>
-            <p>{{interview.sub_size}}</p>
+        <li><span>Grade</span><br>
+            <p *ngIf="interview.level==='junior'" class="i5j">{{interview.level}}</p>
+            <p *ngIf="interview.level==='middle'" class="i5m">{{interview.level}}</p>
+            <p *ngIf="interview.level==='senior'" class="i5s">{{interview.level}}</p>
         </li>
         <hr style="border-bottom:1px solid rgb(222, 221, 221);">
-        <li><span>Email</span><br>
-            <p>{{interview.email}}</p>
+        <li><span>Subjects</span><br>
+            <p>{{interview.sub_size}}</p>
         </li>
         <hr style="border-bottom:1px solid rgb(222, 221, 221);">
         <li><span>Actions</span><br>
@@ -31,9 +33,14 @@
     <div class="sub_d1" *ngIf="interview">
         <div class="div_for" *ngFor="let subject of interview.subjects">
             <p class="sub_n">{{subject.name}}</p>
+            <span style="float: right;" *ngIf="subject.grade==='junior'" class="i5j">{{subject.grade}}</span>
+            <span style="float: right;" *ngIf="subject.grade==='middle'" class="i5m">{{subject.grade}}</span>
+            <span style="float: right;" *ngIf="subject.grade==='senior'" class="i5s">{{subject.grade}}</span>
             <ul *ngIf="subject.description">
                 <li *ngFor="let desc of subject.description">{{desc}}</li>
             </ul>
+            <p class="feedb"># {{subject.feedback}}</p>
+            <hr style="border-bottom:1px solid rgb(222, 221, 221);">
         </div>
     </div>
 </div>
