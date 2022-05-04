@@ -14,6 +14,7 @@ import { TemplateDetailComponent } from './template-detail/template-detail.compo
 import { CommonModule } from '@angular/common';
 import { CreateTemplateComponent } from './create-template/create-template.component';
 import { CreateInterviewComponent } from './create-interview/create-interview.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CreateInterviewComponent } from './create-interview/create-interview.co
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
     ]),
     CommonModule

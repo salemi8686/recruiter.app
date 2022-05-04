@@ -6,11 +6,11 @@
         </li>
         <hr style="border-bottom:1px solid rgb(222, 221, 221);">
         <li><span>Template name</span><br>
-            <p>{{template.title}}</p>
+            <p>{{back_template.title}}</p>
         </li>
         <hr style="border-bottom:1px solid rgb(222, 221, 221);">
         <li><span>Subjects</span><br>
-            <p>{{template.subjects.length}}</p>
+            <p>{{back_template.subjects.length}}</p>
         </li>
         <hr style="border-bottom:1px solid rgb(222, 221, 221);">
         <li><span>Last update</span><br>
@@ -28,12 +28,12 @@
 </div>
 <div id="div2">
     <div class="sub_d1">
-        <div class="div_for" *ngFor="let subject of template.subjects">
+        <div class="div_for" *ngFor="let subject of back_template.subjects">
             <p class="sub_n">{{subject.name}}</p>
             <ul *ngIf="subject.subject">
-                <li><strong>Junior: </strong>{{subject.subject[0]}}</li>
-                <li><strong>Middle: </strong>{{subject.subject[1]}}</li>
-                <li><strong>Senior: </strong> {{subject.subject[2]}}</li>
+                <li><strong>Junior: </strong>{{subject.subject.toString().split('\r')[0].substring(8)}}</li>
+                <li><strong>Middle: </strong>{{subject.subject.toString().split('\r')[1].substring(8)}}</li>
+                <li><strong>Senior: </strong>{{subject.subject.toString().split('\r')[2].substring(10)}}</li>
             </ul>
         </div>
     </div>

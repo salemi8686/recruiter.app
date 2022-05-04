@@ -1,5 +1,5 @@
 <h1>My Interviews</h1>
-<div *ngIf="interviews.length" class="div1">
+<div *ngIf="back_interviews.length" class="div1">
     <div class="div3">
         <p class="p1">#</p>
         <p class="p2">Candidate</p>
@@ -8,7 +8,7 @@
         <p class="p3">Subjects</p>
     </div>
     <hr class="hr_m"><br>
-    <div *ngFor="let interview of interviews" class="div4">
+    <div *ngFor="let interview of back_interviews" class="div4">
         <p class="i1">{{interview.id}}</p>
         <p class="i2">{{interview.candidate_name}}</p>
         <p *ngIf="interview.level==='junior'" class="i5j">{{interview.level}}</p>

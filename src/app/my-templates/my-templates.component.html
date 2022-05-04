@@ -10,10 +10,10 @@
         <p class="p3">Last update</p>
     </div>
     <hr class="hr_m"><br>
-    <div *ngFor="let template of templates" class="div4">
-        <p class="i1">{{template.id}}</p>
-        <p class="i2">{{template.title}}</p>
-        <p class="i4">{{template.subjects.length}}</p>
+    <div *ngFor="let template of templates; index as i" class="div4">
+        <p class="i1">{{back_templates[i].id}}</p>
+        <p class="i2">{{back_templates[i].title}}</p>
+        <p class="i4">{{back_templates[i].subjects.length}}</p>
         <p class="i3">{{dt}}</p><br>
         <a routerLink="/interviews/templates/my/{{template.id}}" class="open_but">Open</a>
     </div>

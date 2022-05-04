@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { interviews, subjects } from '../modlues';
+import { InterviewService } from '../interview.service';
+import { Interview, interviews, subjects } from '../modlues';
 
 @Component({
   selector: 'app-my-interviews',
@@ -10,9 +11,18 @@ export class MyInterviewsComponent implements OnInit {
 
   subjects = subjects;
   interviews = interviews;
-  constructor() { }
+  back_interviews: Interview[] = [];
+  constructor(private interviewService: InterviewService) { }
 
   ngOnInit(): void {
+    this.getInterviews();
   }
 
+  getInterviews(){
+    this.interviewService.getInterviews().subscribe((data)=>{
+      console.log(data);
+      this.back_interviews = data;
+      console.log(this.back_interviews);
+});
+  }
 }

@@ -5,6 +5,14 @@ export interface Subject{
   "description": string[];
   "feedback": string;
 }
+export interface SubjectIn{
+  "id": number;
+  "name": string;
+  "grade": string;
+  "description": string[];
+  "feedback": string;
+  "interview": number;
+}
 export interface Interview{
   "id":number;
   "candidate_name": string,
@@ -33,6 +41,7 @@ export const subjects= [{
   feedback: 'Yes, he is a good at this position',
 }]
 
+export const subjectIns = [{}]
 export const interviews = [{
   id: 1,
   candidate_name: "John Smith",

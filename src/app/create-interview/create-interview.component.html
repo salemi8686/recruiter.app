@@ -17,14 +17,15 @@
         <span class="qu1">q</span><select name="template_titles" id="tit" [(ngModel)]="sel_option"><option *ngFor="let title of template_titles">{{title}}</option><br></select><button class="add" (click)="addTemp()">Add</button><br>
 
         <div *ngIf="add_clicked===1" class="fm3">
-            <div *ngFor="let subject of template.subjects; index as i" class="fm4">
+            <div *ngFor="let subject of back_template.subjects; index as i" class="fm4">
                 <div class="fm5">
                     <span class="qu2">{{i+1}}</span><span class="naming">{{subject.name}}</span> <select name="grd_tit" id="as_grade" [(ngModel)]="gr_option"><option *ngFor="let grade of grades">{{grade}}</option></select><br>
                 </div>
                 <div class="fm6">
-                    <p>Junior:{{subject.subject[0]}}</p>
-                    <p>Middle:{{subject.subject[1]}}</p>
-                    <p>Senior:{{subject.subject[2]}}</p>
+
+                    <p>Junior:{{subject.subject.toString().split('\r')[0].substring(7)}}</p>
+                    <p>Middle:{{subject.subject.toString().split('\r')[1].substring(8)}}</p>
+                    <p>Senior:{{subject.subject.toString().split('\r')[2].substring(9)}}</p>
                 </div>
                 <p style="margin-left: 20px; font-size: 18px;">Comment</p>
                 <textarea id="area" name="w3review" rows="7" cols="80" [(ngModel)]="comment"></textarea>
