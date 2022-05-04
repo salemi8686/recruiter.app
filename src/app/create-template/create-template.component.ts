@@ -1,6 +1,8 @@
 import { Template, templates } from '../modlues';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TemplateService } from '../template.service';
+import { SubjectService } from '../subject.service';
 
 @Component({
   selector: 'app-create-template',
@@ -22,7 +24,8 @@ export class CreateTemplateComponent implements OnInit {
     title: '',
     subjects: [{name:'',subject: []}]
   }
-  constructor(private router: Router) {
+  constructor(private router: Router,private templateService: TemplateService,subjectService: SubjectService) {
+
 
   }
 
@@ -34,6 +37,14 @@ export class CreateTemplateComponent implements OnInit {
 
   }
 
+  addTemplate(template: Template){
+    this.templateService.addTemplate(template).subscribe((template => this.templates.push(template)));
+  }
+
+  // addSubject(subject: Subject){
+  //   this.templateService.addTemplate(template).subscribe((template => this.templates.push(template)));
+  // }
+
   save(){
 
     this.template.id = templates.length+1;
@@ -43,6 +54,7 @@ export class CreateTemplateComponent implements OnInit {
     this.template.subjects[0].subject.push(this.mid1);
     this.template.subjects[0].subject.push(this.sen1);
     console.log(this.template);
+    this.addTemplate(this.template);
     templates.push(this.template);
     this.router.navigateByUrl('interviews/templates/my');
   }
